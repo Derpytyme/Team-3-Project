@@ -10,10 +10,12 @@ about every Pokemon. This dataset has a name, type, and description for each
 pokemon. With so many Pokemon a program that helps categorize and label pokemon
 based on descriptions could be really helpful. Also, it just seemed like a fun domain to
 focus on for this project.
+
 The primary objective of our application is to take a user inputted pokedex
 description of a Pokemon and the program should be able to accurately figure out the
 type and other classification details of the pokemon such as type weaknesses and a
 guess of what pokemon it is.
+
 The program will include a user interface where the user can input pokedex
 descriptions and then view the classification info. A Naive Bayes Classifier will use a
 feature extractor to take the input and parse the input through an NLP processor to
