@@ -10,14 +10,12 @@ import com.mongodb.client.MongoDatabase;
 import static com.mongodb.client.model.Filters.*;
 
 public class Database {
-    private String connectionString = "mongodb+srv://benjamincobb:WGfcZDJ18Lm3n5CF@cos225cluster.ztzml.mongodb.net/?retryWrites=true&w=majority&appName=COS225Cluster";
+    private String connectionString, databaseName, collectionName;
 
-    public Database(){
-        try (MongoClient mongoclient = MongoClients.create(connectionString)) {
-
-
-            
-        }
+    public Database(String dbName, String collectionName){
+        this.connectionString = "mongodb+srv://benjamincobb:WGfcZDJ18Lm3n5CF@cos225cluster.ztzml.mongodb.net/?retryWrites=true&w=majority&appName=COS225Cluster";
+        this.databaseName = dbName;
+        this.collectionName = collectionName;
 
     }
 
