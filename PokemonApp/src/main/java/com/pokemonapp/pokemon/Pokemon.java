@@ -1,4 +1,4 @@
-package com.app.pokemon;
+package com.pokemonapp.pokemon;
 
 import org.bson.Document;
 import java.util.ArrayList;

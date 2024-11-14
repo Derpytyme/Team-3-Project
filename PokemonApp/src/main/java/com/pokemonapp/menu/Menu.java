@@ -1,7 +1,9 @@
-package com.app.menu;
+package com.pokemonapp.menu;
 import org.bson.Document;
-import com.app.database.Database;
-import com.app.pokemon.Pokemon;
+
+import com.pokemonapp.database.Database;
+import com.pokemonapp.pokemon.Pokemon;
+
 import java.util.Scanner;
 import java.io.BufferedReader;
 import java.io.FileReader;
