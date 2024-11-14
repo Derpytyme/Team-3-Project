@@ -1,4 +1,4 @@
-package main.java.com.app.database;
+package com.app.database;
 
 import org.bson.Document;
 
