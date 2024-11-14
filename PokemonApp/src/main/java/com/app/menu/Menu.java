@@ -14,6 +14,9 @@ public void start(){
 
 }
 
+public static void main(String[] args) {
+    Database OurDatabase = new Database("Benjamin's Org - 2024-10-31", "COS225");
+}
 
     
 }
