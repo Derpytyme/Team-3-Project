@@ -1,4 +1,4 @@
-package main.java.com.app.pokemon;
+package src.main.java.com.app.pokemon;
 
 import org.bson.Document;
 
