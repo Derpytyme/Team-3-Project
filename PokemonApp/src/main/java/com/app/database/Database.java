@@ -1,6 +1,7 @@
 package main.java.com.app.database;
 
 import org.bson.Document;
+
 import com.mongodb.client.MongoClient;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
@@ -8,19 +9,23 @@ import com.mongodb.client.*;
 import java.util.List;
 import java.util.ArrayList;
 
+
+
 import static com.mongodb.client.model.Filters.*;
 
 public class Database {
     private String connectionString, databaseName, collectionName;
+
     private MongoClient mongoClient;
     private MongoDatabase database;
     private MongoCollection<Document> collection;
 
-    // Constructor
+
     public Database(String dbName, String collectionName){
         this.connectionString = "mongodb+srv://benjamincobb:WGfcZDJ18Lm3n5CF@cos225cluster.ztzml.mongodb.net/?retryWrites=true&w=majority&appName=COS225Cluster";
         this.databaseName = dbName;
         this.collectionName = collectionName;
+
 
         // Initialize MongoDB connection
         mongoClient = MongoClients.create(connectionString);
@@ -49,4 +54,8 @@ public class Database {
     public void close() {
         mongoClient.close();
     }
+
+    }
+
+
 }
