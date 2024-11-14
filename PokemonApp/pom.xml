@@ -5,22 +5,19 @@
 
     <groupId> PLACEHOLDER </groupId>
     <artifactId> PLACEHOLDER </artifactId>
-
-
     <version>0.0.1</version>
 
     <properties>
         <maven.compiler.source>22</maven.compiler.source>
         <maven.compiler.target>22</maven.compiler.target>
-
     </properties>
 
     <dependencies>
         <dependency>
             <groupId>org.mongodb</groupId>
             <artifactId>mongodb-driver-sync</artifactId>
-
             <version>5.2.0</version>
         </dependency>
     </dependencies>
 
+</project>
