@@ -1,4 +1,4 @@
-package com.app.database;
+package com.pokemonapp.database;
 
 import org.bson.Document;
 
