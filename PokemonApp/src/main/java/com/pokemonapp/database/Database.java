@@ -53,6 +53,17 @@ public class Database {
 
     }
 
+    public void deleteCollection() {
+
+        try (MongoClient mongoClient = MongoClients.create(connectionString)) {
+
+            MongoDatabase movieDatabase = mongoClient.getDatabase(this.databaseName);
+            movieDatabase.getCollection(this.collectionName).drop();
+
+        }
+
+    }
+
     }
 
 
