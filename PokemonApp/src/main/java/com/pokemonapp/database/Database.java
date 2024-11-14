@@ -57,8 +57,21 @@ public class Database {
 
         try (MongoClient mongoClient = MongoClients.create(connectionString)) {
 
-            MongoDatabase movieDatabase = mongoClient.getDatabase(this.databaseName);
-            movieDatabase.getCollection(this.collectionName).drop();
+            MongoDatabase pokemonDatabase = mongoClient.getDatabase(this.databaseName);
+            pokemonDatabase.getCollection(this.collectionName).drop();
+
+        }
+
+    }
+
+    public void deleteAllDocuments() {
+
+        try (MongoClient mongoClient = MongoClients.create(connectionString)) {
+
+            MongoDatabase pokemonDatabase = mongoClient.getDatabase(this.databaseName);
+            MongoCollection<Document> pokemonCollection = pokemonDatabase.getCollection(this.collectionName);
+
+            pokemonCollection.deleteMany(new Document());
 
         }
 
