@@ -96,5 +96,27 @@ public void end() {
     pokemonDatabase.deleteCollection();
 }
 
+public void addPokemonToDatabase() {
+
+    try (Scanner scanner = new Scanner(System.in)) {
+        System.out.println("Enter a pokemon name: ");
+        String name = scanner.nextLine();
+        System.out.println("Enter primary type: ");
+        String primaryType = scanner.nextLine();
+        System.out.println(" Enter secondary type: ");
+        String secondaryType = scanner.nextLine();
+        System.out.println("Enter a pokedex-style description: ");
+        String description = scanner.nextLine();
+
+        Pokemon pokemonEntry = new Pokemon(name, primaryType, secondaryType, description);
+        Database pokemonDatabase = new Database("pokemon_app_database", "pokemon_data");
+
+        pokemonDatabase.addToDatabase(pokemonEntry.getDocument());
+
+    }
+}
+
+
+
 
 }
