@@ -3,8 +3,8 @@
     <modelVersion>4.0.0</modelVersion>
 
 
-    <groupId> PLACEHOLDER </groupId>
-    <artifactId> PLACEHOLDER </artifactId>
+    <groupId> com.PokemonApp </groupId>
+    <artifactId> PokemonApp </artifactId>
     <version>0.0.1</version>
 
     <properties>
