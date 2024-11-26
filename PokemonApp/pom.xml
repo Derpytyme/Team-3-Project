@@ -8,8 +8,8 @@
     <version>0.0.1</version>
 
     <properties>
-        <maven.compiler.source>22</maven.compiler.source>
-        <maven.compiler.target>22</maven.compiler.target>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
     </properties>
 
     <dependencies>
@@ -19,5 +19,6 @@
             <version>5.2.0</version>
         </dependency>
     </dependencies>
+
 
 </project>
