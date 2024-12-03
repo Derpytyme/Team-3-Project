@@ -27,7 +27,7 @@ public void start() {
 
     String csvFile = "src/main/resources/pokemon.csv";
     String line;
-    String delimiter = "\t";
+    String delimiter = "#";
 
     try (BufferedReader br = new BufferedReader(new FileReader(csvFile))) {
         br.readLine(); //skips header line
