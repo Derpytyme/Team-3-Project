@@ -1,4 +1,11 @@
 package com.pokemonapp.menu;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.Scanner;
+import java.util.ArrayList;
+
 import org.bson.Document;
 
 import com.pokemonapp.database.Database;
