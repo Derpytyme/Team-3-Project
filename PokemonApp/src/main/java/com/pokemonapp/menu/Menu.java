@@ -27,10 +27,11 @@ public void start() {
 
     String csvFile = "src/main/resources/pokemon.csv";
     String line;
-    String delimiter = "#";
+    String delimiter = "\t";
 
     try (BufferedReader br = new BufferedReader(new FileReader(csvFile))) {
-        br.readLine(); //skips header line
+        //br.readLine(); //skips header line
+        System.out.println(br);
 
         while ((line = br.readLine()) != null) {
             String[] pokemonData = line.split(delimiter);
