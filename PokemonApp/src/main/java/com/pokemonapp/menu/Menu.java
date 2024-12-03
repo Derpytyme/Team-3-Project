@@ -8,6 +8,7 @@ import java.util.ArrayList;
 
 import org.bson.Document;
 
+import com.mongodb.client.result.InsertOneResult;
 import com.pokemonapp.database.Database;
 import com.pokemonapp.pokemon.Pokemon;
 
@@ -126,14 +127,16 @@ public void addPokemonToDatabase() {
 public static void main(String[] args) {
     Menu menu = new Menu();
     menu.start();
+    int choice = 0;
 
+    while (choice !=0){
     System.out.println("***Please select an option***");
     System.out.println("1. Add a pokemon to the database");
     System.out.println("2. Exit");
     System.out.println("Enter your choice: ");
 
     try (Scanner scanner = new Scanner(System.in)) {
-        int choice = scanner.nextInt();
+        choice = scanner.nextInt();
 
         switch (choice) {
             case 1:
@@ -150,6 +153,7 @@ public static void main(String[] args) {
                 break;
         }
     }
+}
 
 }
 
