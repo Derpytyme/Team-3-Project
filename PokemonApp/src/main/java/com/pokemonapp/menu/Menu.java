@@ -132,37 +132,43 @@ public void addPokemonToDatabase() {
 }
 
 public void HpAttackDeffenseSearch(){
+    Scanner scan = new Scanner(System.in);
+    System.out.println("Enter the value you would like to search for: ");
+    int SearchValue = scan.nextInt();
+
     int choice = 0;
     while (choice !=0){
         System.out.println("***Please select an option***");
         System.out.println("1. HP search");
         System.out.println("2. Attack search");
-        System.out.println("2. Exit");
+        System.out.println("3. Defense search");
         System.out.println("Enter your choice: ");
     
         try (Scanner scanner = new Scanner(System.in)) {
             choice = scanner.nextInt();
-    
+            
+            scanner.nextLine();
+            /*                                              commented until Search is created
+            Search searcher = new Search(SearchValue);
             switch (choice) {
                 case 1:
-                    
+                    searcher.HPSearch();
                     break;
                 
                 case 2:
-                    System.out.println("Entering search...");
-                    
+                    searcher.AttackSearch();
                     break;
             
     
                 case 3:
-                    System.out.println("Exiting...");
-                    
+                    searcher.DefenseSearch();
                     break;
             
                 default:
                     System.out.println("Invalid Choice");
                     break;
             }
+        */
         }
     }
     
