@@ -133,6 +133,7 @@ public static void main(String[] args) {
     while (choice !=0){
     System.out.println("***Please select an option***");
     System.out.println("1. Add a pokemon to the database");
+    System.out.println("2. HP, Attack and Defense search");
     System.out.println("2. Exit");
     System.out.println("Enter your choice: ");
 
