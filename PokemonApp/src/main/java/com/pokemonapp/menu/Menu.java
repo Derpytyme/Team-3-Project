@@ -144,8 +144,14 @@ public static void main(String[] args) {
             case 1:
                 menu.addPokemonToDatabase();
                 break;
-
+            
             case 2:
+                System.out.println("Entering search...");
+                menu.HpAttackDeffenseSearch();
+                break;
+        
+
+            case 3:
                 System.out.println("Exiting...");
                 menu.end();
                 break;
