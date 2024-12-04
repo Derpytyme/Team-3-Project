@@ -116,8 +116,14 @@ public void addPokemonToDatabase() {
         String secondaryType = scanner.nextLine();
         System.out.println("Enter a pokedex-style description: ");
         String description = scanner.nextLine();
+        System.out.println("Enter HP: ");
+        float HP = Float.parseFloat(scanner.nextLine());
+        System.out.println("Enter Attack: ");
+        float Attack = Float.parseFloat(scanner.nextLine());
+        System.out.println("Enter Deffense");
+        float Deffense = Float.parseFloat(scanner.nextLine());
 
-        Pokemon pokemonEntry = new Pokemon(name, primaryType, secondaryType, description);
+        Pokemon pokemonEntry = new Pokemon(name, primaryType, secondaryType, description, HP, Attack, Deffense);
         Database pokemonDatabase = new Database("pokemon_app_database", "pokemon_data");
 
         pokemonDatabase.addToDatabase(pokemonEntry.getDocument());
