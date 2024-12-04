@@ -91,7 +91,7 @@ public void start() {
             String megaEvolutionAlt = pokemonData[53];
             String pokedexDescription = pokemonData[54];
 
-            Pokemon pokemonObject = new Pokemon(englishName, primaryType, secondaryType, pokedexDescription);
+            Pokemon pokemonObject = new Pokemon(englishName, primaryType, secondaryType, pokedexDescription, hp, attack, defense);
             pokemonDatabase.addToDatabase(pokemonObject.getDocument());
 
         }
@@ -125,6 +125,42 @@ public void addPokemonToDatabase() {
     }
 }
 
+public void HpAttackDeffenseSearch(){
+    int choice = 0;
+    while (choice !=0){
+        System.out.println("***Please select an option***");
+        System.out.println("1. HP search");
+        System.out.println("2. Attack search");
+        System.out.println("2. Exit");
+        System.out.println("Enter your choice: ");
+    
+        try (Scanner scanner = new Scanner(System.in)) {
+            choice = scanner.nextInt();
+    
+            switch (choice) {
+                case 1:
+                    
+                    break;
+                
+                case 2:
+                    System.out.println("Entering search...");
+                    
+                    break;
+            
+    
+                case 3:
+                    System.out.println("Exiting...");
+                    
+                    break;
+            
+                default:
+                    System.out.println("Invalid Choice");
+                    break;
+            }
+        }
+    }
+    
+}
 public static void main(String[] args) {
     Menu menu = new Menu();
     menu.start();
