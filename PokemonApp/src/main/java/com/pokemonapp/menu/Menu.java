@@ -11,6 +11,7 @@ import org.bson.Document;
 import com.mongodb.client.result.InsertOneResult;
 import com.pokemonapp.database.Database;
 import com.pokemonapp.pokemon.Pokemon;
+import com.pokemonapp.search.Search;
 
 import java.util.Scanner;
 import java.io.BufferedReader;
@@ -148,7 +149,7 @@ public void HpAttackDeffenseSearch(){
             choice = scanner.nextInt();
             
             scanner.nextLine();
-            /*                                              commented until Search is created
+            
             Search searcher = new Search(SearchValue);
             switch (choice) {
                 case 1:
@@ -168,7 +169,7 @@ public void HpAttackDeffenseSearch(){
                     System.out.println("Invalid Choice");
                     break;
             }
-        */
+        
         }
     }
     
