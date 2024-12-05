@@ -8,12 +8,12 @@ public class Pokemon {
     private String type1;       // Primary type
     private String type2;       // Secondary type, can be null
     private String description; // Description of the Pokémon
-    private float hp;
-    private float attack;
-    private float defense;
+    private int hp;
+    private int attack;
+    private int defense;
 
     // Constructor
-    public Pokemon(String name, String type1, String type2, String description, float hp, float attack, float defense) {
+    public Pokemon(String name, String type1, String type2, String description, int hp, int attack, int defense) {
         this.name = name;
         this.type1 = type1;
         this.type2 = type2;

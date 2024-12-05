@@ -1,0 +1,4 @@
+com\pokemonapp\menu\Menu.class
+com\pokemonapp\database\Database.class
+com\pokemonapp\pokemon\Pokemon.class
+com\pokemonapp\search\Search.class

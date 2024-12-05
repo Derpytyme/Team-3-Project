@@ -26,7 +26,7 @@ public void start() {
     Database pokemonDatabase = new Database("pokemon_app_databse", "pokemon_data");
     pokemonDatabase.createCollection();
 
-    String csvFile = "src/main/resources/pokemon.csv";
+    String csvFile = "src/main/resources/pokemon copy.csv";
     String line;
     String delimiter = "\t";
 
@@ -35,30 +35,36 @@ public void start() {
         System.out.println(br);
 
         while ((line = br.readLine()) != null) {
+            /* 
             String[] pokemonData = line.split(delimiter);
-            Float nationalNumber = Float.parseFloat(pokemonData[pokemonData.length - 55]);
-            String generation = pokemonData[1];
-            String englishName = pokemonData[2];
-            String japaneseName = pokemonData[3];
+            //Float nationalNumber = Float.parseFloat(pokemonData[pokemonData.length - 55]);
+            //String generation = pokemonData[1];
+            //String englishName = pokemonData[2];
+            //String japaneseName = pokemonData[3];
             String primaryType = pokemonData[4];
             String secondaryType = pokemonData[5];
             String classification = pokemonData[6];
+             
             Float percentMale = Float.parseFloat(pokemonData[pokemonData.length - 47]);
             Float percentFemale = Float.parseFloat(pokemonData[pokemonData.length - 46]);
             Float height = Float.parseFloat(pokemonData[pokemonData.length - 45]);
             Float weight = Float.parseFloat(pokemonData[pokemonData.length - 44]);
             Float captureRate = Float.parseFloat(pokemonData[pokemonData.length - 43]);
             Float baseEggSteps = Float.parseFloat(pokemonData[pokemonData.length - 42]);
-            Float hp = Float.parseFloat(pokemonData[pokemonData.length - 41]);
-            Float attack = Float.parseFloat(pokemonData[pokemonData.length - 40]);
-            Float defense = Float.parseFloat(pokemonData[pokemonData.length - 39]);
+            
             Float spAttack = Float.parseFloat(pokemonData[pokemonData.length - 38]);
             Float spDefense = Float.parseFloat(pokemonData[pokemonData.length - 37]);
             Float speed = Float.parseFloat(pokemonData[pokemonData.length - 36]);
-            String abilities_1 = pokemonData[19];
-            String abilities_2 = pokemonData[20];
-            String abilities_3 = pokemonData[21];
-            String hiddenAbilities = pokemonData[22];
+            
+
+            Float hp = Float.parseFloat(pokemonData[pokemonData.length - 41]);
+            Float attack = Float.parseFloat(pokemonData[pokemonData.length - 40]);
+            Float defense = Float.parseFloat(pokemonData[pokemonData.length - 39]);
+            //String abilities_1 = pokemonData[19];
+            //String abilities_2 = pokemonData[20];
+            //String abilities_3 = pokemonData[21];
+            //String hiddenAbilities = pokemonData[22];
+            /* 
             Float againstNormal = Float.parseFloat(pokemonData[pokemonData.length - 31]);
             Float againstFire = Float.parseFloat(pokemonData[pokemonData.length - 30]);
             Float againstWater = Float.parseFloat(pokemonData[pokemonData.length - 29]);
@@ -90,7 +96,25 @@ public void start() {
             String gigantamax = pokemonData[51];
             String megaEvolution = pokemonData[52];
             String megaEvolutionAlt = pokemonData[53];
+            
             String pokedexDescription = pokemonData[54];
+            */
+            String[] pokemonData = line.split(delimiter);
+            String englishName = pokemonData[0];
+            String primaryType = pokemonData[1];
+            String secondaryType = pokemonData[2];
+            String Shp = pokemonData[3];
+            String Sattack = pokemonData[4];
+            String Sdefense = pokemonData[5];
+
+            //int hp = Float.parseFloat(pokemonData[3]);
+            //Float attack = Float.parseFloat(pokemonData[4]);
+            //Float defense = Float.parseFloat(pokemonData[5]);
+            String pokedexDescription = pokemonData[6];
+
+            int hp = Integer.parseInt(Shp);
+            int attack = Integer.parseInt(Sattack);
+            int defense = Integer.parseInt(Sdefense);
 
             Pokemon pokemonObject = new Pokemon(englishName, primaryType, secondaryType, pokedexDescription, hp, attack, defense);
             pokemonDatabase.addToDatabase(pokemonObject.getDocument());
@@ -118,11 +142,11 @@ public void addPokemonToDatabase() {
         System.out.println("Enter a pokedex-style description: ");
         String description = scanner.nextLine();
         System.out.println("Enter HP: ");
-        float HP = Float.parseFloat(scanner.nextLine());
+        int HP = Integer.parseInt(scanner.nextLine());
         System.out.println("Enter Attack: ");
-        float Attack = Float.parseFloat(scanner.nextLine());
+        int Attack = Integer.parseInt(scanner.nextLine());
         System.out.println("Enter Deffense");
-        float Deffense = Float.parseFloat(scanner.nextLine());
+        int Deffense = Integer.parseInt(scanner.nextLine());
 
         Pokemon pokemonEntry = new Pokemon(name, primaryType, secondaryType, description, HP, Attack, Deffense);
         Database pokemonDatabase = new Database("pokemon_app_database", "pokemon_data");
