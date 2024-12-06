@@ -87,59 +87,50 @@ public void addPokemonToDatabase() {
 public void HpAttackDeffenseSearch(){
     Scanner scan = new Scanner(System.in);
     System.out.println("Enter the value you would like to search for: ");
-    int SearchValue = scan.nextInt();
-
+    System.out.println("***Please select an option***");
+    System.out.println("1. HP search");
+    System.out.println("2. Attack search");
+    System.out.println("3. Defense search");
+    System.out.println("Enter your choice: ");
     int choice = 0;
-    while (choice !=0){
-        System.out.println("***Please select an option***");
-        System.out.println("1. HP search");
-        System.out.println("2. Attack search");
-        System.out.println("3. Defense search");
-        System.out.println("Enter your choice: ");
-    
         try (Scanner scanner = new Scanner(System.in)) {
             choice = scanner.nextInt();
             
-            scanner.nextLine();
-            
-            Search searcher = new Search(SearchValue);
-            switch (choice) {
-                case 1:
-                    searcher.HPSearch();
-                    break;
+            // Search searcher = new Search(SearchValue);
+            // switch (choice) {
+            //     case 1:
+            //         searcher.HPSearch();
+            //         break;
                 
-                case 2:
-                    searcher.AttackSearch();
-                    break;
+            //     case 2:
+            //         searcher.AttackSearch();
+            //         break;
             
     
-                case 3:
-                    searcher.DefenseSearch();
-                    break;
+            //     case 3:
+            //         searcher.DefenseSearch();
+            //         break;
             
-                default:
-                    System.out.println("Invalid Choice");
-                    break;
-            }
+            //     default:
+            //         System.out.println("Invalid Choice");
+            //         break;
+            // }
         
         }
     }
     
-}
+
 public static void main(String[] args) {
     System.out.println("Initializing Pokemon app...");
 
     Menu menu = new Menu();
     menu.start();
     System.out.println("***Please select an option***");
-
-    int choice = 0;
-
-    while (choice !=0){
     System.out.println("1. Add a pokemon to the database");
     System.out.println("2. HP, Attack and Defense search");
-    System.out.println("2. Exit");
+    System.out.println("3. Exit");
     System.out.println("Enter your choice: ");
+    int choice = 0;
 
     try (Scanner scanner = new Scanner(System.in)) {
         choice = scanner.nextInt();
@@ -165,8 +156,6 @@ public static void main(String[] args) {
                 break;
         }
     }
-}
-
 }
 
 }
