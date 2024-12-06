@@ -38,15 +38,15 @@ public class Pokemon {
         return description;
     }
     
-    public float GetHp() {
+    public int GetHp() {
         return hp;
     }
 
-    public float GetAttack() {
+    public int GetAttack() {
         return attack;
     }
 
-    public float Getdefense() {
+    public int Getdefense() {
         return defense;
     }
 
