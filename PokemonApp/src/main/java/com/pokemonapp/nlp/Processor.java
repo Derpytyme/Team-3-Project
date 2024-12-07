@@ -36,5 +36,27 @@ public class Processor {
         public String[] tokenizeWords(String text) {
             return text.split("\\s+");
         }
+
+        public String[] removeStopWords(String[] arrayOfText) {
+            Set<String> words = new HashSet<>();
+            for (String word : arrayOfText) {
+                if (!stopWords.contains(word)) {
+                    words.add(word);
+                }
+            }
+            return words.toArray(new String[0]);
+        }
+    
+        public String[] processText(String text) {
+            text = lowerAllCases(text);
+            text = removePunctuation(text);
+            String[] words = tokenizeWords(text);
+            words = removeStopWords(words);
+            return words;
+        }
+    
+        public String[] splitTextIntoSentences(String text) {
+            return text.split("\\.");
+        }
     
 }
