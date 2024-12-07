@@ -10,11 +10,17 @@ import org.bson.BsonValue;
 
 import com.mongodb.client.result.InsertOneResult;
 import com.pokemonapp.database.Database;
+import com.pokemonapp.nlp.TFIDF;
 import com.pokemonapp.pokemon.Pokemon;
 import com.pokemonapp.search.Search;
 
+import com.pokemonapp.nlp.Processor;
+import com.pokemonapp.nlp.PokemonClassifier;
 
 public class Menu {
+    private Processor processor = new Processor("src/main/resources/listOfStopWords.txt");
+    private TFIDF tfidf = new TFIDF(processor);
+    private PokemonClassifier classifier = new PokemonClassifier(processor);
 
 //method that will read a csv file and put the collection into the database
 public void start() {
@@ -123,6 +129,16 @@ public void HpAttackDeffenseSearch(){
         }
     }
     
+    public void classifyPokemon(Scanner scanner) {
+
+        System.out.println("Please enter the discription of the pokemon");
+        String description = scanner.nextLine();
+
+        String sentiment = classifier.classify(description);
+        System.out.println("The clasification of this pokemon is: " + sentiment);
+
+    }
+
 
 public static void main(String[] args) {
     System.out.println("Initializing Pokemon app...");
@@ -152,7 +168,7 @@ public static void main(String[] args) {
         
             case 3:
                 System.out.println("Entering Clasification");
-                menu.clasifyPokemon();
+                menu.classifyPokemon(scanner);
                 break;
 
             case 4:
