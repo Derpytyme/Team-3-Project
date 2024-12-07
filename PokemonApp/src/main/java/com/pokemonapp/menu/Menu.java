@@ -89,7 +89,7 @@ public void HpAttackDeffenseSearch(){
 
     System.out.println("Enter the value you would like to search for: ");
     int SearchValue = scan.nextInt();
-    
+
     System.out.println("Enter the value you would like to search for: ");
     System.out.println("***Please select an option***");
     System.out.println("1. HP search");
@@ -132,7 +132,8 @@ public static void main(String[] args) {
     System.out.println("***Please select an option***");
     System.out.println("1. Add a pokemon to the database");
     System.out.println("2. HP, Attack and Defense search");
-    System.out.println("3. Exit");
+    System.out.println("3. Classify Pokemon");
+    System.out.println("4. Exit");
     System.out.println("Enter your choice: ");
     int choice = 0;
 
@@ -149,8 +150,12 @@ public static void main(String[] args) {
                 menu.HpAttackDeffenseSearch();
                 break;
         
-
             case 3:
+                System.out.println("Entering Clasification");
+                menu.clasifyPokemon();
+                break;
+
+            case 4:
                 System.out.println("Exiting...");
                 menu.end();
                 break;
