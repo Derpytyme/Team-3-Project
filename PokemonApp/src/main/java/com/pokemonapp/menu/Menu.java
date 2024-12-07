@@ -51,7 +51,8 @@ public void start() {
             int defense = Integer.parseInt(Sdefense.trim());
 
             Pokemon pokemonObject = new Pokemon(englishName, primaryType, secondaryType, pokedexDescription, hp, attack, defense);
-            pokemonDatabase.addToDatabase(pokemonObject.getDocument());
+            InsertOneResult result = pokemonDatabase.addToDatabase(pokemonObject.getDocument());
+            BsonValue id = result.getInsertedId();
 
         }
     } catch (IOException e) {

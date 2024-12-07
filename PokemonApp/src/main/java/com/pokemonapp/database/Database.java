@@ -6,6 +6,7 @@ import com.mongodb.client.MongoClient;
 import com.mongodb.client.MongoClients;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
+import com.mongodb.client.result.InsertOneResult;
 
 
 public class Database {
@@ -29,14 +30,14 @@ public class Database {
 
     }
 
-    public void addToDatabase(Document document) {
+    public InsertOneResult addToDatabase(Document document) {
 
         try (MongoClient mongoClient = MongoClients.create(connectionString)) {
 
             MongoDatabase pokemonDatabase = mongoClient.getDatabase(this.databaseName);
             MongoCollection<Document> pokemonCollection = pokemonDatabase.getCollection(this.collectionName);
 
-            pokemonCollection.insertOne(document);
+            return pokemonCollection.insertOne(document);
 
         }
 
