@@ -25,5 +25,16 @@ public class Processor {
             }
         }
 
+        public String lowerAllCases(String text) {
+            return text.toLowerCase();
+        }   
+
+        public String removePunctuation(String text) {
+            return text.replaceAll("[^a-zA-Z0-9]", " ");
+        }
+    
+        public String[] tokenizeWords(String text) {
+            return text.split("\\s+");
+        }
     
 }
