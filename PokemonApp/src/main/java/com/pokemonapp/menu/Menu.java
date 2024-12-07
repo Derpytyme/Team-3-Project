@@ -54,6 +54,8 @@ public void start() {
             InsertOneResult result = pokemonDatabase.addToDatabase(pokemonObject.getDocument());
             BsonValue id = result.getInsertedId();
 
+            tfidf.addSample(id, pokemonObject.getDescription());
+
         }
     } catch (IOException e) {
         e.printStackTrace();
