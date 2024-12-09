@@ -1,5 +1,8 @@
 package com.pokemonapp.database;
 
+import java.util.ArrayList;
+
+import org.bson.BsonValue;
 import org.bson.Document;
 
 import com.mongodb.client.MongoClient;
@@ -73,6 +76,38 @@ public class Database {
             MongoCollection<Document> pokemonCollection = pokemonDatabase.getCollection(this.collectionName);
 
             pokemonCollection.deleteMany(new Document());
+
+        }
+
+    }
+
+    public ArrayList<Document> getAllDocuments() {
+
+        ArrayList<Document> documents = new ArrayList<Document>();
+
+        try (MongoClient mongoClient = MongoClients.create(connectionString)) {
+
+            MongoDatabase genericDatabase = mongoClient.getDatabase(this.databaseName);
+            MongoCollection<Document> genericCollection = genericDatabase.getCollection(this.collectionName);
+
+            for (Document doc : genericCollection.find()) {
+                documents.add(doc);
+            }
+
+        }
+        
+        return documents;
+
+    }
+
+    public Document getDocumentByID(BsonValue id) {
+
+        try (MongoClient mongoClient = MongoClients.create(connectionString)) {
+
+            MongoDatabase genericDatabase = mongoClient.getDatabase(this.databaseName);
+            MongoCollection<Document> genericCollection = genericDatabase.getCollection(this.collectionName);
+
+            return genericCollection.find(new Document("_id", id)).first();
 
         }
 
