@@ -76,4 +76,8 @@ public class Pokemon {
         return document;
         
     }
+
+    public String toString() {
+        return "Name: " + getName() + ", HP: " + GetHp() + ", Attack: " + GetAttack() + ", Defense: " + Getdefense();
+    }
 }
