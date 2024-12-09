@@ -17,8 +17,22 @@ public class Pokemon {
         this.name = name;
         this.type1 = type1;
         this.type2 = type2;
+        this.description = description;
         this.hp = hp;
         this.attack = attack;
+        this.defense=defense;
+    }
+
+    // Constructor
+    public Pokemon(Document document) {
+        this.name = document.getString("name");
+        this.type1 = document.getString("type1");
+        this.type2 = document.getString("type2");
+        this.description = document.getString("description");
+        this.hp = document.getInteger("hp");
+        this.attack = document.getInteger("attack");
+        this.defense = document.getInteger("defense");
+
     }
 
     // Getters
