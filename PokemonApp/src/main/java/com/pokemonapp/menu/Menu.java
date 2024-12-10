@@ -62,7 +62,7 @@ public void start() {
     }
 }
 
-public void end() {
+public static void end() {
     Database pokemonDatabase = new Database("pokemon_app_database", "pokemon_data");
     pokemonDatabase.deleteCollection();
 }
@@ -139,8 +139,9 @@ public void HpAttackDeffenseSearch(){
             String description = scan.nextLine();
             String sentiment = classifier.classify(description);
             System.out.println("The clasification of this pokemon is: " + sentiment);
+            System.out.println("**Exiting the program**");
+            Menu.end();
         }
-
     }
 
 
@@ -177,7 +178,8 @@ public static void main(String[] args) {
 
             case 4:
                 System.out.println("Exiting...");
-                menu.end();
+                Menu.end();
+                scanner.close();
                 break;
         
             default:

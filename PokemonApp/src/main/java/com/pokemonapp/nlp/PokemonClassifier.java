@@ -329,9 +329,7 @@ public class PokemonClassifier {
         else if (steelScore > Collections.max(scores)) {
             return "steel";
         }
-        else {
-            return "fairy";
-        }
+        else return "fairy";
 
     }
 
