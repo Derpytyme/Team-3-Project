@@ -135,10 +135,11 @@ public void HpAttackDeffenseSearch(){
     public void classifyPokemon(Scanner scanner) {
 
         System.out.println("Please enter the discription of the pokemon");
-        String description = scanner.nextLine();
-
-        String sentiment = classifier.classify(description);
-        System.out.println("The clasification of this pokemon is: " + sentiment);
+        try (Scanner scan = new Scanner(System.in)) {
+            String description = scan.nextLine();
+            String sentiment = classifier.classify(description);
+            System.out.println("The clasification of this pokemon is: " + sentiment);
+        }
 
     }
 
