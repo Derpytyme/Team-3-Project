@@ -1,0 +1,50 @@
+Bulbasaur#grass#poison#45#49#49#There is a plant seed on its back right from the day this Pokémon is born. The seed slowly grows larger.
+Ivysaur#grass#poison#60#62#63#"When the bulb on its back grows large, it appears to lose the ability to stand on its hind legs."
+Venusaur#grass#poison#80#82#83#Its plant blooms when it is absorbing solar energy. It stays on the move to seek sunlight.
+Charmander#fire#Blank#39#52#43#"It has a preference for hot things. When it rains, steam is said to spout from the tip of its tail."
+Charmeleon#fire#Blank#58#64#58#"It has a barbaric nature. In battle, it whips its fiery tail around and slashes away with sharp claws."
+Charizard#fire#flying#78#84#78#It spits fire that is hot enough to melt boulders. It may cause forest fires by blowing flames.
+Squirtle#water#Blank#44#48#65#"When it retracts its long neck into its shell, it squirts out water with vigorous force."
+Wartortle#water#Blank#59#63#80#"It is recognized as a symbol of longevity. If its shell has algae on it, that Wartortle is very old."
+Blastoise#water#Blank#79#83#100#"It crushes its foe under its heavy body to cause fainting. In a pinch, it will withdraw inside its shell."
+Caterpie#bug#Blank#45#30#35#"For protection, it releases a horrible stench from the antenna on its head to drive away enemies."
+Metapod#bug#Blank#50#20#55#"It is waiting for the moment to evolve. At this stage, it can only harden, so it remains motionless to avoid attack."
+Butterfree#bug#flying#60#45#50#"In battle, it flaps its wings at great speed to release highly toxic dust into the air."
+Weedle#bug#poison#40#35#30#Beware of the sharp stinger on its head. It hides in grass and bushes where it eats leaves.
+Kakuna#bug#poison#45#25#50#"Able to move only slightly. When endangered, it may stick out its stinger and poison its enemy."
+Beedrill#bug#poison#65#90#40#It has three poisonous stingers on its forelegs and its tail. They are used to jab its enemy repeatedly.
+Pidgey#normal#flying#40#45#40#"Very docile. If attacked, it will often kick up sand to protect itself rather than fight back."
+Pidgeotto#normal#flying#63#60#55#This Pokémon is full of vitality. It constantly flies around its large territory in search of prey.
+Pidgeot#normal#flying#83#80#75#"This Pokémon flies at Mach 2 speed, seeking prey. Its large talons are feared as wicked weapons."
+Rattata#normal#dark#30#56#35#"Will chew on anything with its fangs. If you see one, you can be certain that 40 more live in the area."
+Raticate#normal#dark#55#81#60#"Its hind feet are webbed. They act as flippers, so it can swim in rivers and hunt for prey."
+Spearow#normal#flying#40#60#30#"Inept at flying high. However, it can fly around very fast to protect its territory."
+Fearow#normal#flying#65#90#65#"A Pokémon that dates back many years. If it senses danger, it flies high and away, instantly."
+Ekans#poison#Blank#35#60#44#"The older it gets, the longer it grows. At night, it wraps its long body around tree branches to rest."
+Arbok#poison#Blank#60#95#69#The frightening patterns on its belly have been studied. Six variations have been confirmed.
+Pikachu#electric#Blank#35#55#40#Pikachu that can generate powerful electricity have cheek sacs that are extra soft and super stretchy.
+Raichu#electric#electric#60#90#55#Its long tail serves as a ground to protect itself from its own high-voltage power.
+Sandshrew#ground#ice#50#75#85#"It loves to bathe in the grit of dry, sandy areas. By sand bathing, the Pokémon rids itself of dirt and moisture clinging to its body."
+Sandslash#ground#ice#75#100#110#"The drier the area Sandslash lives in, the harder and smoother the Pokémon’s spikes will feel when touched."
+Nidoran♀#poison#Blank#55#47#52#"Females are more sensitive to smells than males. While foraging, they’ll use their whiskers to check wind direction and stay downwind of predators."
+Nidorina#poison#Blank#70#62#67#The horn on its head has atrophied. It’s thought that this happens so Nidorina’s children won’t get poked while their mother is feeding them.
+Nidoqueen#poison#ground#90#92#87#"Nidoqueen is better at defense than offense. With scales like armor, this Pokémon will shield its children from any kind of attack."
+Nidoran♂#poison#Blank#46#57#40#"The horn on a male Nidoran’s forehead contains a powerful poison. This is a very cautious Pokémon, always straining its large ears."
+Nidorino#poison#Blank#61#72#57#"With a horn that’s harder than diamond, this Pokémon goes around shattering boulders as it searches for a moon stone."
+Nidoking#poison#ground#81#102#77#"When it goes on a rampage, it’s impossible to control. But in the presence of a Nidoqueen it’s lived with for a long time, Nidoking calms down."
+Clefairy#fairy#Blank#70#45#48#It is said that happiness will come to those who see a gathering of Clefairy dancing under a full moon.
+Clefable#fairy#Blank#95#70#73#"A timid fairy Pokémon that is rarely seen, it will run and hide the moment it senses people."
+Vulpix#fire#ice#38#41#40#"While young, it has six gorgeous tails. When it grows, several new tails are sprouted."
+Ninetales#fire#ice#73#76#75#"It is said to live 1,000 years, and each of its tails is loaded with supernatural powers."
+Jigglypuff#normal#fairy#115#45#20#"Jigglypuff has top-notch lung capacity, even by comparison to other Pokémon. It won’t stop singing its lullabies until its foes fall asleep."
+Wigglytuff#normal#fairy#140#70#45#"The more air it takes in, the more it inflates. If opponents catch it in a bad mood, it will inflate itself to an enormous size to intimidate them."
+Zubat#poison#flying#40#45#35#"It emits ultrasonic waves from its mouth to check its surroundings. Even in tight caves, Zubat flies around with skill."
+Golbat#poison#flying#75#80#70#"It loves to drink other creatures’ blood. It’s said that if it finds others of its kind going hungry, it sometimes shares the blood it’s gathered."
+Oddish#grass#poison#45#50#55#"If exposed to moonlight, it starts to move. It roams far and wide at night to scatter its seeds."
+Gloom#grass#poison#60#65#70#Its pistils exude an incredibly foul odor. The horrid stench can cause fainting at a distance of 1.25 miles.
+Vileplume#grass#poison#75#80#85#"It has the world’s largest petals. With every step, the petals shake out heavy clouds of toxic pollen."
+Paras#bug#grass#35#70#55#Burrows under the ground to gnaw on tree roots. The mushrooms on its back absorb most of the nutrition.
+Parasect#bug#grass#60#95#80#The bug host is drained of energy by the mushroom on its back. The mushroom appears to do all the thinking.
+Venonat#bug#poison#60#55#50#"Its large eyes act as radar. In a bright place, you can see that they are clusters of many tiny eyes."
+Venomoth#bug#poison#70#65#60#The powdery scales on its wings are hard to remove from skin. They also contain poison that leaks out on contact.
+Diglett#ground#ground#10#55#25#"If a Diglett digs through a field, it leaves the soil perfectly tilled and ideal for planting crops."

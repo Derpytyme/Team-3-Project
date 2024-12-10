@@ -27,7 +27,6 @@ public class Search {
     public Search(int SearchValue){
         this.SearchValue = SearchValue;
         data = database.getAllDocuments();
-     
 
 
         for (int i = 0; i<data.size(); i++){
@@ -45,6 +44,7 @@ public class Search {
         for (int i = 0; i< PokemonList.size() && numOfResults <5; i++){
             if (PokemonList.get(i).GetHp() > SearchValue){
                 PokemonResultList.add(PokemonList.get(i));
+                numOfResults ++;
             }
         }
         System.out.println(PokemonResultList);
@@ -57,6 +57,7 @@ public class Search {
         for (int i = 0; i< PokemonList.size() && numOfResults <5; i++){
             if (PokemonList.get(i).GetAttack() > SearchValue){
                 PokemonResultList.add(PokemonList.get(i));
+                numOfResults ++;
             }
         }
         System.out.println(PokemonResultList);
@@ -70,6 +71,7 @@ public class Search {
         for (int i = 0; i< PokemonList.size() && numOfResults <5; i++){
             if (PokemonList.get(i).Getdefense() > SearchValue){
                 PokemonResultList.add(PokemonList.get(i));
+                numOfResults ++;
             }
         }
         System.out.println(PokemonResultList);

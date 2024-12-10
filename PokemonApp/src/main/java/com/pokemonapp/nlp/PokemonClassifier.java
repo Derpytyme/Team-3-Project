@@ -332,6 +332,9 @@ public class PokemonClassifier {
         else{
             return "fairy";
         }
+        else{
+            return "Failed to find Data";
+        }
     }
 
 }
