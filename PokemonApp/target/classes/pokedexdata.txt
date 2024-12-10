@@ -1,0 +1,91 @@
+grass#There is a plant seed on its back right from the day this Pokémon is born. The seed slowly grows larger.
+grass#When the bulb on its back grows large, it appears to lose the ability to stand on its hind legs
+grass#Its plant blooms when it is absorbing solar energy. It stays on the move to seek sunlight.
+fire#It has a preference for hot things. When it rains, steam is said to spout from the tip of its tail.
+fire#It has a barbaric nature. In battle, it whips its fiery tail around and slashes away with sharp claws.
+fire#It spits fire that is hot enough to melt boulders. It may cause forest fires by blowing flames.
+water#When it retracts its long neck into its shell, it squirts out water with vigorous force.
+water#It is recognized as a symbol of longevity. If its shell has algae on it, that Wartortle is very old.
+water#It crushes its foe under its heavy body to cause fainting. In a pinch, it will withdraw inside its shell.
+bug#For protection, it releases a horrible stench from the antenna on its head to drive away enemies.
+bug#It is waiting for the moment to evolve. At this stage, it can only harden, so it remains motionless to avoid attack.
+bug#In battle, it flaps its wings at great speed to release highly toxic dust into the air.
+bug#Beware of the sharp stinger on its head. It hides in grass and bushes where it eats leaves.
+bug#Able to move only slightly. When endangered, it may stick out its stinger and poison its enemy.
+bug#It has three poisonous stingers on its forelegs and its tail. They are used to jab its enemy repeatedly.
+normal#Very docile. If attacked, it will often kick up sand to protect itself rather than fight back.
+normal#This Pokémon is full of vitality. It constantly flies around its large territory in search of prey.
+normal#This Pokémon flies at Mach 2 speed, seeking prey. Its large talons are feared as wicked weapons.
+normal#Will chew on anything with its fangs. If you see one, you can be certain that 40 more live in the area.
+normal#Its hind feet are webbed. They act as flippers, so it can swim in rivers and hunt for prey.
+normal#Inept at flying high. However, it can fly around very fast to protect its territory.
+normal#A Pokémon that dates back many years. If it senses danger, it flies high and away, instantly.
+poison#The older it gets, the longer it grows. At night, it wraps its long body around tree branches to rest.
+poison#The frightening patterns on its belly have been studied. Six variations have been confirmed.
+electric#Pikachu that can generate powerful electricity have cheek sacs that are extra soft and super stretchy.
+electric#Its long tail serves as a ground to protect itself from its own high-voltage power.
+ground#It loves to bathe in the grit of dry, sandy areas. By sand bathing, the Pokémon rids itself of dirt and moisture clinging to its body.
+ground#The drier the area Sandslash lives in, the harder and smoother the Pokémon’s spikes will feel when touched."
+poison#Females are more sensitive to smells than males. While foraging, they’ll use their whiskers to check wind direction and stay downwind of predators.
+poison#The horn on its head has atrophied. It’s thought that this happens so Nidorina’s children won’t get poked while their mother is feeding them.
+poison#Nidoqueen is better at defense than offense. With scales like armor, this Pokémon will shield its children from any kind of attack."
+poison#The horn on a male Nidoran’s forehead contains a powerful poison. This is a very cautious Pokémon, always straining its large ears."
+poison#With a horn that’s harder than diamond, this Pokémon goes around shattering boulders as it searches for a moon stone."
+poison#When it goes on a rampage, it’s impossible to control. But in the presence of a Nidoqueen it’s lived with for a long time, Nidoking calms down.
+fairy#It is said that happiness will come to those who see a gathering of Clefairy dancing under a full moon.
+fairy#A timid fairy Pokémon that is rarely seen, it will run and hide the moment it senses people.
+fire#While young, it has six gorgeous tails. When it grows, several new tails are sprouted.
+fire#It is said to live 1,000 years, and each of its tails is loaded with supernatural powers.
+normal#Jigglypuff has top-notch lung capacity, even by comparison to other Pokémon. It won’t stop singing its lullabies until its foes fall asleep
+normal#The more air it takes in, the more it inflates. If opponents catch it in a bad mood, it will inflate itself to an enormous size to intimidate them.
+poison#It emits ultrasonic waves from its mouth to check its surroundings. Even in tight caves, Zubat flies around with skill.
+poison#It loves to drink other creatures’ blood. It’s said that if it finds others of its kind going hungry, it sometimes shares the blood it’s gathered.
+grass#If exposed to moonlight, it starts to move. It roams far and wide at night to scatter its seeds.
+grass#Its pistils exude an incredibly foul odor. The horrid stench can cause fainting at a distance of 1.25 miles.
+grass#It has the world’s largest petals. With every step, the petals shake out heavy clouds of toxic pollen.
+bug#Burrows under the ground to gnaw on tree roots. The mushrooms on its back absorb most of the nutrition.
+bug#The bug host is drained of energy by the mushroom on its back. The mushroom appears to do all the thinking.
+bug#Its large eyes act as radar. In a bright place, you can see that they are clusters of many tiny eyes.
+bug#The powdery scales on its wings are hard to remove from skin. They also contain poison that leaks out on contact.
+ground#If a Diglett digs through a field, it leaves the soil perfectly tilled and ideal for planting crops.
+fighting#This amazing Pokémon has an awesome sense of balance. It can kick in succession from any position.
+fighting#Its punches slice the air. They are launched at such high speed, even a slight graze could cause a burn.
+fighting#It is always bursting with energy. To make itself stronger, it keeps on fighting even if it loses.
+fighting#It launches kicks while spinning. If it spins at high speed, it may bore its way into the ground.
+flying#The lower half of its body is wrapped in a cloud of energy. It zooms through the sky at 200 mph.
+flying#After nightfall, they emerge from the caves they nest in during the day. Using their ultrasonic waves, they go on the hunt for ripened fruit.
+flying#Aggressive and cruel, this Pokémon will ruthlessly torment enemies that are helpless in the dark.
+flying#It will bravely challenge any opponent, no matter how powerful. This Pokémon benefits from every battle—even a defeat increases its strength a bit.
+electric#Although it’s alien to this world and a danger here, it’s apparently a common organism in the world where it normally lives.
+electric#It electrifies its claws and tears its opponents apart with them. Even if they dodge its attack, they’ll be electrocuted by the flying sparks.
+ground#As it digs, it swallows sand and stores it in its neck pouch. The pouch can hold more than 17 pounds of sand.
+psychic#Via the protrusion on its head, it senses other creatures’ emotions. If you don’t have a calm disposition, it will never warm up to you.
+psychic#No matter who you are, if you bring strong emotions near this Pokémon, it will silence you violently.
+psychic#It emits psychic power strong enough to cause headaches as a deterrent to the approach of others.
+psychic#It uses the horns on its head to sense the emotions of others. Males will act as valets for those they serve, looking after their every need.
+rock#Commonly found near mountain trails and the like. If you step on one by accident, it gets angry.
+rock#Often seen rolling down mountain trails. Obstacles are just things to roll straight over, not avoid.
+rock#Once it sheds its skin, its body turns tender and whitish. Its hide hardens when it’s exposed to air.
+rock#As it digs through the ground, it absorbs many hard objects. This is what makes its body so solid.
+ice#In certain parts of Galar, Jynx was once feared and worshiped as the Queen of Ice.
+ice#Glastrier emits intense cold from its hooves. It’s also a belligerent Pokémon—anything it wants, it takes by force.
+ice#It drifted in on the flow of ocean waters from a frigid place. It keeps its head iced constantly to make sure it stays nice and cold.
+ice#Icy scales fall from its wings like snow as it flies over fields and mountains. The temperature of its wings is less than −290 degrees Fahrenheit.
+dragon#Dratini dwells near bodies of rapidly flowing water, such as the plunge pools of waterfalls. As it grows, Dratini will shed its skin many times.
+dragon#This Pokémon lives in pristine oceans and lakes. It can control the weather, and it uses this power to fly into the sky, riding on the wind.
+dragon#It’s a kindhearted Pokémon. If it spots a drowning person or Pokémon, Dragonite simply must help them.
+dragon#As it flies in a calm and relaxed manner, Altaria performs a humming song that would enrapture any audience.
+ghost#It eats up emotions like malice, jealousy, and resentment, so some people are grateful for its presence.
+ghost#It’s a stuffed toy that was thrown away and became possessed, ever searching for the one who threw it away so it can exact its revenge.
+ghost#If it finds bad children who won’t listen to their parents, it will spirit them away—or so it’s said.
+ghost#Its body is entirely hollow. When it opens its mouth, it sucks everything in as if it were a black hole.
+dark#It will absolutely not forgive failure from or betrayal by its goons. It has no choice in this if it wants to maintain the order of the flock.
+dark#Swift as the wind, Absol races through fields and mountains. Its curved, bow-like horn is acutely sensitive to the warning signs of natural disasters.
+dark#This Pokémon is feared. When its gemstone eyes begin to glow with a sinister shine, it’s believed that Sableye will steal people’s spirits away.
+dark#Mightyena gives obvious signals when it is preparing to attack. It starts to growl deeply and then flattens its body. This Pokémon will bite savagely with its sharply pointed fangs.
+steel#It uses its docile-looking face to lull foes into complacency, then bites with its huge, relentless jaws.
+steel#It eats iron ore—and sometimes railroad tracks— to build up the steel armor that protects its body.
+steel#Lairon live in mountains brimming with spring water and iron ore, so these Pokémon often came into conflict with humans in the past.
+steel#Aggron has a horn sharp enough to perforate thick iron sheets. It brings down its opponents by ramming into them horn first.
+fairy#These Pokémon are never seen anywhere near conflict or turmoil. In recent times, they’ve hardly been seen at all.
+fairy#A scent pouch within this Pokémon’s body allows it to create various scents. A change in its diet will alter the fragrance it produces.

@@ -1,7 +1,8 @@
-C:\Users\bcobb\OneDrive\Documents\2024 Fall\COS 225\Team-3-Project\PokemonApp\src\main\java\com\pokemonapp\database\Database.java
-C:\Users\bcobb\OneDrive\Documents\2024 Fall\COS 225\Team-3-Project\PokemonApp\src\main\java\com\pokemonapp\menu\Menu.java
-C:\Users\bcobb\OneDrive\Documents\2024 Fall\COS 225\Team-3-Project\PokemonApp\src\main\java\com\pokemonapp\nlp\PokemonClassifier.java
-C:\Users\bcobb\OneDrive\Documents\2024 Fall\COS 225\Team-3-Project\PokemonApp\src\main\java\com\pokemonapp\nlp\Processor.java
-C:\Users\bcobb\OneDrive\Documents\2024 Fall\COS 225\Team-3-Project\PokemonApp\src\main\java\com\pokemonapp\nlp\TFIDF.java
-C:\Users\bcobb\OneDrive\Documents\2024 Fall\COS 225\Team-3-Project\PokemonApp\src\main\java\com\pokemonapp\pokemon\Pokemon.java
-C:\Users\bcobb\OneDrive\Documents\2024 Fall\COS 225\Team-3-Project\PokemonApp\src\main\java\com\pokemonapp\search\Search.java
+/mnt/c/users/liv97/Desktop/cos225/Team-3-Project/pokemonapp/src/main/java/com/pokemonapp/pokemon/Pokemon.java
+/mnt/c/users/liv97/Desktop/cos225/Team-3-Project/pokemonapp/src/main/java/com/pokemonapp/database/Database.java
+/mnt/c/users/liv97/Desktop/cos225/Team-3-Project/pokemonapp/src/main/java/com/pokemonapp/menu/Menu.java
+/mnt/c/users/liv97/Desktop/cos225/Team-3-Project/pokemonapp/src/main/java/com/pokemonapp/nlp/Processor.java
+/mnt/c/users/liv97/Desktop/cos225/Team-3-Project/pokemonapp/src/main/java/com/pokemonapp/nlp/PokemonClassifier.java
+/mnt/c/users/liv97/Desktop/cos225/Team-3-Project/pokemonapp/src/main/java/com/pokemonapp/nlp/TFIDF.java
+/mnt/c/users/liv97/Desktop/cos225/Team-3-Project/pokemonapp/src/main/java/com/pokemonapp/pokemon/PokedexEntry.java
+/mnt/c/users/liv97/Desktop/cos225/Team-3-Project/pokemonapp/src/main/java/com/pokemonapp/search/Search.java

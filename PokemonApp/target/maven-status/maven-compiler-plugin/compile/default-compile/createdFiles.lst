@@ -1,7 +1,7 @@
-com\pokemonapp\nlp\TFIDF.class
-com\pokemonapp\database\Database.class
-com\pokemonapp\pokemon\Pokemon.class
-com\pokemonapp\nlp\Processor.class
-com\pokemonapp\menu\Menu.class
-com\pokemonapp\search\Search.class
-com\pokemonapp\nlp\PokemonClassifier.class
+com/pokemonapp/nlp/Processor.class
+com/pokemonapp/nlp/PokemonClassifier.class
+com/pokemonapp/search/Search.class
+com/pokemonapp/database/Database.class
+com/pokemonapp/menu/Menu.class
+com/pokemonapp/pokemon/Pokemon.class
+com/pokemonapp/nlp/TFIDF.class
