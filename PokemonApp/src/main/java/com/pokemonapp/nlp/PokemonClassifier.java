@@ -7,6 +7,8 @@ import java.util.Collections;
 import java.util.List;
 
 import org.bson.BsonValue;
+
+import com.pokemonapp.pokemon.PokedexEntry;
 import com.pokemonapp.pokemon.Pokemon;
 
 public class PokemonClassifier {
@@ -75,77 +77,77 @@ public class PokemonClassifier {
         this.processor = processor;
     }
     
-    public void addSample(BsonValue id, Pokemon pokemon) {
-        String[] words = processor.processText(pokemon.getType1());
-        if (pokemon.getType1().equals("normal")) {
+    public void addSample(BsonValue id, PokedexEntry pokemon) {
+        String[] words = processor.processText(pokemon.getType());
+        if (pokemon.getType().equals("normal")) {
             updateWordCount(normalTypeWordCount, words);
             numNormalType++;
         }
-        else if (pokemon.getType1().equals("fire")) {
+        else if (pokemon.getType().equals("fire")) {
             updateWordCount(fireTypeWordCount, words);
             numFireType++;
         }
-        else if (pokemon.getType1().equals("fighting")) {
+        else if (pokemon.getType().equals("fighting")) {
             updateWordCount(fightingTypeWordCount, words);
             numFightingType++;
         }
-        else if (pokemon.getType1().equals("water")) {
+        else if (pokemon.getType().equals("water")) {
             updateWordCount(waterTypeWordCount, words);
             numWaterType++;
         }
-        else if (pokemon.getType1().equals("flying")) {
+        else if (pokemon.getType().equals("flying")) {
             updateWordCount(flyingTypeWordCount, words);
             numFlyingType++;
         }
-        else if (pokemon.getType1().equals("grass")) {
+        else if (pokemon.getType().equals("grass")) {
             updateWordCount(grassTypeWordCount, words);
             numGrassType++;
         }   
-        else if (pokemon.getType1().equals("poison")) {
+        else if (pokemon.getType().equals("poison")) {
             updateWordCount(poisonTypeWordCount, words);
             numPoisonType++;
         }
-        else if (pokemon.getType1().equals("electric")) {
+        else if (pokemon.getType().equals("electric")) {
             updateWordCount(electricTypeWordCount, words);
             numElectricType++;
         }
-        else if (pokemon.getType1().equals("ground")) {
+        else if (pokemon.getType().equals("ground")) {
             updateWordCount(groundTypeWordCount, words);
             numGroundType++;
         }
-        else if (pokemon.getType1().equals("psychic")) {
+        else if (pokemon.getType().equals("psychic")) {
             updateWordCount(psychicTypeWordCount, words);
             numPsychicType++;
         }
-        else if (pokemon.getType1().equals("rock")) {
+        else if (pokemon.getType().equals("rock")) {
             updateWordCount(rockTypeWordCount, words);
             numRockType++;
         }
-        else if (pokemon.getType1().equals("ice")) {
+        else if (pokemon.getType().equals("ice")) {
             updateWordCount(iceTypeWordCount, words);
             numIceType++;
         }
-        else if (pokemon.getType1().equals("bug")) {
+        else if (pokemon.getType().equals("bug")) {
             updateWordCount(bugTypeWordCount, words);
             numBugType++;
         }
-        else if (pokemon.getType1().equals("dragon")) {
+        else if (pokemon.getType().equals("dragon")) {
             updateWordCount(dragonTypeWordCount, words);
             numDragonType++;
         }
-        else if (pokemon.getType1().equals("ghost")) {
+        else if (pokemon.getType().equals("ghost")) {
             updateWordCount(ghostTypeWordCount, words);
             numGhostType++;
         }
-        else if (pokemon.getType1().equals("dark")) {
+        else if (pokemon.getType().equals("dark")) {
             updateWordCount(darkTypeWordCount, words);
             numDarkType++;
         }
-        else if (pokemon.getType1().equals("steel")) {
+        else if (pokemon.getType().equals("steel")) {
             updateWordCount(steelTypeWordCount, words);
             numSteelType++;
         }
-        else if (pokemon.getType1().equals("fairy")) {
+        else if (pokemon.getType().equals("fairy")) {
             updateWordCount(fairyTypeWordCount, words);
             numFairyType++;
         }
