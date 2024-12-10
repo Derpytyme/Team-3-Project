@@ -28,12 +28,12 @@ public void start() {
     Database pokemonDatabase = new Database("pokemon_app_databse", "pokemon_data");
     pokemonDatabase.createCollection();
 
-    String csvFile = "src/main/resources/pokemondatanew.csv";
+    String csvFile = "src/main/resources/pokemonDataSmall.txt";
     String line;
-    String delimiter = ",";
+    String delimiter = "#";
 
     try (BufferedReader br = new BufferedReader(new FileReader(csvFile))) {
-        br.readLine(); //skips header line
+        //br.readLine(); //skips header line
 
         while ((line = br.readLine()) != null) {
             String[] pokemonData = line.split(delimiter);
