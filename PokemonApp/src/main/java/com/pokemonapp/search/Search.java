@@ -27,7 +27,6 @@ public class Search {
     public Search(int SearchValue){
         this.SearchValue = SearchValue;
         data = database.getAllDocuments();
-     
 
 
         for (int i = 0; i<data.size(); i++){

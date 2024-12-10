@@ -332,6 +332,9 @@ public class PokemonClassifier {
         else if (fairyScore > Collections.max(scores)) {
             return "fairy";
         }
+        else{
+            return "Failed to find Data";
+        }
     }
 
 }

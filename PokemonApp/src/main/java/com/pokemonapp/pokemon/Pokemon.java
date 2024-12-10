@@ -69,10 +69,13 @@ public class Pokemon {
     // Converts the object to a MongoDB document
     public Document getDocument() {
         Document document = new Document();
-        document.append("Name: ", name);
-        document.append("Type1: ", type1);
-        document.append("Type2: ", type2);
-        document.append("Description: ", description);
+        document.append("name", name);
+        document.append("type1", type1);
+        document.append("type2", type2);
+        document.append("description", description);
+        document.append("hp", hp);
+        document.append("attack", attack);
+        document.append("defense", defense);
         return document;
         
     }
