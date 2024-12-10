@@ -11,7 +11,6 @@ import org.bson.BsonValue;
 import com.mongodb.client.result.InsertOneResult;
 import com.pokemonapp.database.Database;
 import com.pokemonapp.nlp.TFIDF;
-import com.pokemonapp.pokemon.PokedexEntry;
 import com.pokemonapp.pokemon.Pokemon;
 import com.pokemonapp.search.Search;
 
@@ -55,35 +54,22 @@ public void start() {
             InsertOneResult result = pokemonDatabase.addToDatabase(pokemonObject.getDocument());
             BsonValue id = result.getInsertedId();
 
+
+            
             tfidf.addSample(id, pokemonObject.getDescription());
+
+            
+
         }
         tfidf.calculateIDF();
     } catch (IOException e) {
         e.printStackTrace();
     }
-     // Parse the pokedexdata.txt
-     String pokedexDataFile = "src/main/resources/pokedexdata.txt";
-     String pokedexLine;
 
-     try (BufferedReader br = new BufferedReader(new FileReader(pokedexDataFile))) {
 
-         while ((pokedexLine = br.readLine()) != null) {
-             String[] pokedexData = pokedexLine.split(delimiter);
-             String type = pokedexData[0];
-             String entry = pokedexData[1];
-
-             PokedexEntry pokedex = new PokedexEntry(type, entry);
-             InsertOneResult result = pokemonDatabase.addToDatabase(pokedex.getDocument());
-
-             classifier.addSample(result.getInsertedId(), pokedex);
-         }
-         classifier.train();
-     } catch (IOException e) {
-         e.printStackTrace();
-     }
 }
 
-public static void end() {
+public void end() {
     Database pokemonDatabase = new Database("pokemon_app_database", "pokemon_data");
     pokemonDatabase.deleteCollection();
 }
@@ -153,16 +139,14 @@ public void HpAttackDeffenseSearch(){
         }
     }
     
-    public void classifyPokemon(Scanner scanner) {
-
+    public void classifyPokemon() {
+        Scanner scan = new Scanner(System.in);
         System.out.println("Please enter the discription of the pokemon");
-        try (Scanner scan = new Scanner(System.in)) {
-            String description = scan.nextLine();
-            String sentiment = classifier.classify(description);
-            System.out.println("The clasification of this pokemon is: " + sentiment);
-            System.out.println("**Exiting the program**");
-            Menu.end();
-        }
+        String description = scan.nextLine();
+
+        String sentiment = classifier.classify(description);
+        System.out.println("The clasification of this pokemon is: " + sentiment);
+
     }
 
 
@@ -194,13 +178,12 @@ public static void main(String[] args) {
         
             case 3:
                 System.out.println("Entering Clasification");
-                menu.classifyPokemon(scanner);
+                menu.classifyPokemon();
                 break;
 
             case 4:
                 System.out.println("Exiting...");
-                Menu.end();
-                scanner.close();
+                menu.end();
                 break;
         
             default:

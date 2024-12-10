@@ -7,8 +7,6 @@ import java.util.Collections;
 import java.util.List;
 
 import org.bson.BsonValue;
-
-import com.pokemonapp.pokemon.PokedexEntry;
 import com.pokemonapp.pokemon.Pokemon;
 
 public class PokemonClassifier {
@@ -77,77 +75,77 @@ public class PokemonClassifier {
         this.processor = processor;
     }
     
-    public void addSample(BsonValue id, PokedexEntry pokemon) {
-        String[] words = processor.processText(pokemon.getType());
-        if (pokemon.getType().equals("normal")) {
+    public void addSample(BsonValue id, Pokemon pokemon) {
+        String[] words = processor.processText(pokemon.getType1());
+        if (pokemon.getType1().equals("normal")) {
             updateWordCount(normalTypeWordCount, words);
             numNormalType++;
         }
-        else if (pokemon.getType().equals("fire")) {
+        else if (pokemon.getType1().equals("fire")) {
             updateWordCount(fireTypeWordCount, words);
             numFireType++;
         }
-        else if (pokemon.getType().equals("fighting")) {
+        else if (pokemon.getType1().equals("fighting")) {
             updateWordCount(fightingTypeWordCount, words);
             numFightingType++;
         }
-        else if (pokemon.getType().equals("water")) {
+        else if (pokemon.getType1().equals("water")) {
             updateWordCount(waterTypeWordCount, words);
             numWaterType++;
         }
-        else if (pokemon.getType().equals("flying")) {
+        else if (pokemon.getType1().equals("flying")) {
             updateWordCount(flyingTypeWordCount, words);
             numFlyingType++;
         }
-        else if (pokemon.getType().equals("grass")) {
+        else if (pokemon.getType1().equals("grass")) {
             updateWordCount(grassTypeWordCount, words);
             numGrassType++;
         }   
-        else if (pokemon.getType().equals("poison")) {
+        else if (pokemon.getType1().equals("poison")) {
             updateWordCount(poisonTypeWordCount, words);
             numPoisonType++;
         }
-        else if (pokemon.getType().equals("electric")) {
+        else if (pokemon.getType1().equals("electric")) {
             updateWordCount(electricTypeWordCount, words);
             numElectricType++;
         }
-        else if (pokemon.getType().equals("ground")) {
+        else if (pokemon.getType1().equals("ground")) {
             updateWordCount(groundTypeWordCount, words);
             numGroundType++;
         }
-        else if (pokemon.getType().equals("psychic")) {
+        else if (pokemon.getType1().equals("psychic")) {
             updateWordCount(psychicTypeWordCount, words);
             numPsychicType++;
         }
-        else if (pokemon.getType().equals("rock")) {
+        else if (pokemon.getType1().equals("rock")) {
             updateWordCount(rockTypeWordCount, words);
             numRockType++;
         }
-        else if (pokemon.getType().equals("ice")) {
+        else if (pokemon.getType1().equals("ice")) {
             updateWordCount(iceTypeWordCount, words);
             numIceType++;
         }
-        else if (pokemon.getType().equals("bug")) {
+        else if (pokemon.getType1().equals("bug")) {
             updateWordCount(bugTypeWordCount, words);
             numBugType++;
         }
-        else if (pokemon.getType().equals("dragon")) {
+        else if (pokemon.getType1().equals("dragon")) {
             updateWordCount(dragonTypeWordCount, words);
             numDragonType++;
         }
-        else if (pokemon.getType().equals("ghost")) {
+        else if (pokemon.getType1().equals("ghost")) {
             updateWordCount(ghostTypeWordCount, words);
             numGhostType++;
         }
-        else if (pokemon.getType().equals("dark")) {
+        else if (pokemon.getType1().equals("dark")) {
             updateWordCount(darkTypeWordCount, words);
             numDarkType++;
         }
-        else if (pokemon.getType().equals("steel")) {
+        else if (pokemon.getType1().equals("steel")) {
             updateWordCount(steelTypeWordCount, words);
             numSteelType++;
         }
-        else if (pokemon.getType().equals("fairy")) {
+        else if (pokemon.getType1().equals("fairy")) {
             updateWordCount(fairyTypeWordCount, words);
             numFairyType++;
         }
@@ -257,8 +255,6 @@ public class PokemonClassifier {
         double steelScore = Math.log((double) numSteelType / totalPokemon);
         double fairyScore = Math.log((double) numFairyType / totalPokemon);
 
-        List<Double> scores = Arrays.asList(normalScore, fireScore, fightingScore, waterScore, flyingScore, grassScore, poisonScore, electricScore, groundScore, psychicScore, rockScore, iceScore, bugScore, dragonScore, ghostScore, darkScore, steelScore, fairyScore);
-
         for (String word : words) {
             normalScore += Math.log(normalTypeProbabilities.getOrDefault(word, 1.0 / (normalTypeWordCount.size() + vocabulary.size())));
             fireScore += Math.log(fireTypeProbabilities.getOrDefault(word, 1.0 / (fireTypeWordCount.size() + vocabulary.size())));
@@ -279,6 +275,8 @@ public class PokemonClassifier {
             steelScore += Math.log(steelTypeProbabilities.getOrDefault(word, 1.0 / (steelTypeWordCount.size() + vocabulary.size())));
             fairyScore += Math.log(fairyTypeProbabilities.getOrDefault(word, 1.0 / (fairyTypeWordCount.size() + vocabulary.size())));
         }
+    
+        List<Double> scores = Arrays.asList(normalScore, fireScore, fightingScore, waterScore, flyingScore, grassScore, poisonScore, electricScore, groundScore, psychicScore, rockScore, iceScore, bugScore, dragonScore, ghostScore, darkScore, steelScore, fairyScore);
 
         if (normalScore > Collections.max(scores)){
             return "normal";
@@ -331,8 +329,12 @@ public class PokemonClassifier {
         else if (steelScore > Collections.max(scores)) {
             return "steel";
         }
-        else return "fairy";
-
+        else if (fairyScore > Collections.max(scores)) {
+            return "fairy";
+        }
+        else{
+            return "Failed to find Data";
+        }
     }
 
 }
