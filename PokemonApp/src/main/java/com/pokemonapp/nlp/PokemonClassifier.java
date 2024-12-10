@@ -255,6 +255,8 @@ public class PokemonClassifier {
         double steelScore = Math.log((double) numSteelType / totalPokemon);
         double fairyScore = Math.log((double) numFairyType / totalPokemon);
 
+        List<Double> scores = Arrays.asList(normalScore, fireScore, fightingScore, waterScore, flyingScore, grassScore, poisonScore, electricScore, groundScore, psychicScore, rockScore, iceScore, bugScore, dragonScore, ghostScore, darkScore, steelScore, fairyScore);
+
         for (String word : words) {
             normalScore += Math.log(normalTypeProbabilities.getOrDefault(word, 1.0 / (normalTypeWordCount.size() + vocabulary.size())));
             fireScore += Math.log(fireTypeProbabilities.getOrDefault(word, 1.0 / (fireTypeWordCount.size() + vocabulary.size())));
@@ -275,8 +277,6 @@ public class PokemonClassifier {
             steelScore += Math.log(steelTypeProbabilities.getOrDefault(word, 1.0 / (steelTypeWordCount.size() + vocabulary.size())));
             fairyScore += Math.log(fairyTypeProbabilities.getOrDefault(word, 1.0 / (fairyTypeWordCount.size() + vocabulary.size())));
         }
-    
-        List<Double> scores = Arrays.asList(normalScore, fireScore, fightingScore, waterScore, flyingScore, grassScore, poisonScore, electricScore, groundScore, psychicScore, rockScore, iceScore, bugScore, dragonScore, ghostScore, darkScore, steelScore, fairyScore);
 
         if (normalScore > Collections.max(scores)){
             return "normal";
@@ -329,7 +329,7 @@ public class PokemonClassifier {
         else if (steelScore > Collections.max(scores)) {
             return "steel";
         }
-        else if (fairyScore > Collections.max(scores)) {
+        else{
             return "fairy";
         }
     }
