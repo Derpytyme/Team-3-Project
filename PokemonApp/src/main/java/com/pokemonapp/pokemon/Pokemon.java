@@ -16,7 +16,7 @@ public class Pokemon {
     public Pokemon(String name, String type1, String type2, String description, int hp, int attack, int defense) {
         this.name = name;
         this.type1 = type1;
-        this.type2 = type2;
+        this.type2 = type2; 
         this.description = description;
         this.hp = hp;
         this.attack = attack;
@@ -81,6 +81,6 @@ public class Pokemon {
     }
 
     public String toString() {
-        return "Name: " + getName() + ", HP: " + GetHp() + ", Attack: " + GetAttack() + ", Defense: " + Getdefense();
+        return "Name: " + getName() + ", \tHP: " + GetHp() + ", \tAttack: " + GetAttack() + ", \tDefense: " + Getdefense();
     }
 }

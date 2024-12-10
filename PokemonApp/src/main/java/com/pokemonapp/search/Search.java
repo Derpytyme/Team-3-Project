@@ -38,43 +38,42 @@ public class Search {
 
     }
     public void HPSearch(){
-        int numOfResults = 0;
-        ArrayList<Pokemon> PokemonResultList = new ArrayList<Pokemon>();
+
         PokemonList.sort( (a, b) -> { return Integer.compare((a.GetHp()), (b.GetHp())); } );
-        for (int i = 0; i< PokemonList.size() && numOfResults <5; i++){
-            if (PokemonList.get(i).GetHp() > SearchValue){
-                PokemonResultList.add(PokemonList.get(i));
-                numOfResults ++;
+        for (int i = 0; i< PokemonList.size(); i++){
+            if (PokemonList.get(i).GetHp() == SearchValue){
+                System.out.println(PokemonList.get(i));
+                
             }
         }
-        System.out.println(PokemonResultList);
+
     }
 
     public void AttackSearch(){
-        int numOfResults = 0;
-        ArrayList<Pokemon> PokemonResultList = new ArrayList<Pokemon>();
+
+        
         PokemonList.sort( (a, b) -> { return Integer.compare((a.GetAttack()), (b.GetAttack())); } );
-        for (int i = 0; i< PokemonList.size() && numOfResults <5; i++){
-            if (PokemonList.get(i).GetAttack() > SearchValue){
-                PokemonResultList.add(PokemonList.get(i));
-                numOfResults ++;
+        for (int i = 0; i< PokemonList.size(); i++){
+            if (PokemonList.get(i).GetAttack() == SearchValue){
+                System.out.println(PokemonList.get(i));
+                
             }
         }
-        System.out.println(PokemonResultList);
+        
 
     }
 
     public void DefenseSearch(){
-        int numOfResults = 0;
-        ArrayList<Pokemon> PokemonResultList = new ArrayList<Pokemon>();
+
+        
         PokemonList.sort( (a, b) -> { return Integer.compare((a.Getdefense()), (b.Getdefense())); } );
-        for (int i = 0; i< PokemonList.size() && numOfResults <5; i++){
-            if (PokemonList.get(i).Getdefense() > SearchValue){
-                PokemonResultList.add(PokemonList.get(i));
-                numOfResults ++;
+        for (int i = 0; i< PokemonList.size(); i++){
+            if (PokemonList.get(i).Getdefense() == SearchValue){
+                System.out.println(PokemonList.get(i));
+    
             }
         }
-        System.out.println(PokemonResultList);
+
     }
 
     

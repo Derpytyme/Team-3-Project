@@ -54,12 +54,19 @@ public void start() {
             InsertOneResult result = pokemonDatabase.addToDatabase(pokemonObject.getDocument());
             BsonValue id = result.getInsertedId();
 
+
+            
             tfidf.addSample(id, pokemonObject.getDescription());
 
+            
+
         }
+        tfidf.calculateIDF();
     } catch (IOException e) {
         e.printStackTrace();
     }
+
+
 }
 
 public void end() {
@@ -132,10 +139,10 @@ public void HpAttackDeffenseSearch(){
         }
     }
     
-    public void classifyPokemon(Scanner scanner) {
-
+    public void classifyPokemon() {
+        Scanner scan = new Scanner(System.in);
         System.out.println("Please enter the discription of the pokemon");
-        String description = scanner.nextLine();
+        String description = scan.nextLine();
 
         String sentiment = classifier.classify(description);
         System.out.println("The clasification of this pokemon is: " + sentiment);
@@ -171,7 +178,7 @@ public static void main(String[] args) {
         
             case 3:
                 System.out.println("Entering Clasification");
-                menu.classifyPokemon(scanner);
+                menu.classifyPokemon();
                 break;
 
             case 4:
