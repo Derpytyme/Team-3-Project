@@ -101,51 +101,50 @@ public void addPokemonToDatabase() {
 }
 
 public void HpAttackDeffenseSearch(){
-    Scanner scan = new Scanner(System.in);
+    try (Scanner scan = new Scanner(System.in)) {
+        System.out.println("Enter the value you would like to search for: ");
+        int SearchValue = scan.nextInt();
 
-    System.out.println("Enter the value you would like to search for: ");
-    int SearchValue = scan.nextInt();
-
-    System.out.println("Enter the value you would like to search for: ");
-    System.out.println("***Please select an option***");
-    System.out.println("1. HP search");
-    System.out.println("2. Attack search");
-    System.out.println("3. Defense search");
-    System.out.println("Enter your choice: ");
-    int choice = 0;
-        try (Scanner scanner = new Scanner(System.in)) {
-            choice = scanner.nextInt();
-            
-            Search searcher = new Search(SearchValue);
-            switch (choice) {
-                case 1:
-                    searcher.HPSearch();
-                    break;
+        System.out.println("Enter the value you would like to search for: ");
+        System.out.println("***Please select an option***");
+        System.out.println("1. HP search");
+        System.out.println("2. Attack search");
+        System.out.println("3. Defense search");
+        System.out.println("Enter your choice: ");
+        int choice = 0;
+                choice = scan.nextInt();
+                Search searcher = new Search(SearchValue);
+                switch (choice) {
+                    case 1:
+                        searcher.HPSearch();
+                        break;
+                    
+                    case 2:
+                        searcher.AttackSearch();
+                        break;
                 
-                case 2:
-                    searcher.AttackSearch();
-                    break;
-            
-    
-                case 3:
-                    searcher.DefenseSearch();
-                    break;
-            
-                default:
-                    System.out.println("Invalid Choice");
-                    break;
-            }
         
-        }
+                    case 3:
+                        searcher.DefenseSearch();
+                        break;
+                
+                    default:
+                        System.out.println("Invalid Choice");
+                        break;
+                }
+            
+        
+    }
     }
     
     public void classifyPokemon() {
-        Scanner scan = new Scanner(System.in);
-        System.out.println("Please enter the discription of the pokemon");
-        String description = scan.nextLine();
+        try (Scanner scan = new Scanner(System.in)) {
+            System.out.println("Please enter the discription of the pokemon");
+            String description = scan.nextLine();
 
-        String sentiment = classifier.classify(description);
-        System.out.println("The clasification of this pokemon is: " + sentiment);
+            String sentiment = classifier.classify(description);
+            System.out.println("The clasification of this pokemon is: " + sentiment);
+        }
 
     }
 
@@ -162,35 +161,36 @@ public static void main(String[] args) {
     System.out.println("4. Exit");
     System.out.println("Enter your choice: ");
     int choice = 0;
+    while (choice != 4){
+        try (Scanner scanner = new Scanner(System.in)) {
+            choice = scanner.nextInt();
 
-    try (Scanner scanner = new Scanner(System.in)) {
-        choice = scanner.nextInt();
-
-        switch (choice) {
-            case 1:
-                menu.addPokemonToDatabase();
-                break;
+            switch (choice) {
+                case 1:
+                    menu.addPokemonToDatabase();
+                    break;
+                
+                case 2:
+                    System.out.println("Entering search...");
+                    menu.HpAttackDeffenseSearch();
+                    break;
             
-            case 2:
-                System.out.println("Entering search...");
-                menu.HpAttackDeffenseSearch();
-                break;
-        
-            case 3:
-                System.out.println("Entering Clasification");
-                menu.classifyPokemon();
-                break;
+                case 3:
+                    System.out.println("Entering Clasification");
+                    menu.classifyPokemon();
+                    break;
 
-            case 4:
-                System.out.println("Exiting...");
-                menu.end();
-                break;
-        
-            default:
-                System.out.println("Invalid Choice");
-                break;
+                case 4:
+                    System.out.println("Exiting...");
+                    menu.end();
+                    break;
+            
+                default:
+                    System.out.println("Invalid Choice");
+                    break;
+            }
         }
-    }
+}
 }
 
 }
