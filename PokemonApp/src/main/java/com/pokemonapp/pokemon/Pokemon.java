@@ -29,9 +29,14 @@ public class Pokemon {
         this.type1 = document.getString("type1");
         this.type2 = document.getString("type2");
         this.description = document.getString("description");
-        this.hp = document.getInteger("hp");
-        this.attack = document.getInteger("attack");
-        this.defense = document.getInteger("defense");
+        try{
+            this.hp = document.getInteger("hp");
+            this.attack = document.getInteger("attack");
+            this.defense = document.getInteger("defense");
+        } catch (NullPointerException e) {
+            //System.out.println("Null Value"); // disable comment to see errors
+        }
+
 
     }
 
